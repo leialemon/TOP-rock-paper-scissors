@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>TOP - Rock, Paper, Scissors</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <script src="./main.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TOP - Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="title">Rock, Paper, Scissors!</h1>
+        <h2 class="title">Choose your move:</h2>
+        <div class="buttons">
+            <button type="button" id="rock" class="hands" onclick="getHumanChoice('rock')">
+                <img src="./images/rock.png" alt="drawing of a hand doing the rock symbol" width="200" height="200">
+            </button>
+            <button type="button" id="paper" class="hands" onclick="getHumanChoice('paper')">
+                <img src="./images/paper.png" alt="drawing of a hand doing the paper symbol" width="200" height="200">
+            </button>
+            <button type="button" id="scissors" class="hands" onclick="getHumanChoice('scissors')">
+                <img src="./images/scissors.png" alt="drawing of a hand doing the scissors symbol" width="200"
+                    height="200">
+            </button>
+        </div>
+        <button id="play" type="button" disabled="disabled">Play!</button>
+        <div class="scores">
+            <h2>Scoreboard</h2>
+            <table>
+                <tr>
+                    <th>Human</th>
+                    <th>Computer</th>
+                </tr>
+                <tr>
+                       <td id="humanScore">0</td>
+                       <td id="computerScore">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
 </html>

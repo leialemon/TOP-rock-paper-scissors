@@ -1,3 +1,49 @@
 body{
     background-color: #ffea00;
 }
+
+button{
+    background-color: #ffea00;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hands{
+    padding: 10px 10px;
+    margin: 0 0;
+    border: solid black;
+    border-radius: 10%;
+    border-width: 5px;
+}
+
+.hands:hover{
+    border: solid white;
+    border-radius: 10%;
+    border-width: 5px;
+    transition: 0.5s;
+}
+
+.hands:active{
+    background-color: white;
+    border: solid white;
+    border-radius: 10%;
+    border-width: 5px;
+}
